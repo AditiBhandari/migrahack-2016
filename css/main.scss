@@ -4,28 +4,37 @@
 @charset "utf-8";
 
 body {
-	background-image: url('../img/dark_stripes.png');
+	background-image: url('../img/cork-wallet.png');
+}
+
+.container-fluid {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .section {
-	height: 100vh;
+	height: 80vh;
+	margin-top: 10vh;
 	width: 100%;
 	background-repeat: no-repeat;
-  background-size: cover;
+  	background-size: cover;
+  	padding-top: 60px;
+  	margin-left: 15px !important;
 
 	p {
 		font-size: 20px;
 		font-family: Georgia, serif;
-		color: #fff;
-		margin-top: 40px;
-		text-shadow: 1px 1px #000;
+		color: #666;
+		margin-top: 60px;
+		// text-shadow: 1px 1px #000;
+		line-height: 1.7;
 	}
 
 	p.caption {
 		font-size: 14px;
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		color: #aaa;
+		color: #ddd;
 		font-style: italic;
 	}
 }
@@ -37,4 +46,5 @@ body {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 auto;
 }
