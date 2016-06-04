@@ -29,3 +29,26 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+// TODO: Style this
+.gang-testimony {
+  blockquote {
+    border: none;
+  }
+}
+
+.gang-testimony__image {
+  display: block;
+  margin-left: 15%;
+  float: left;
+}
+
+.gang-testimony__narrative-wrapper {
+  float: left;
+  margin-left: 1em;
+  width: 50%;
+}
+
+.gang-testimony__name {
+  margin-top: 0;
+}
