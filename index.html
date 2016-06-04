@@ -1,23 +1,33 @@
 ---
 layout: default
 sections:
-    - template: intro.html
-    - template: cambo-genocide.html
-    - template: detention.html
-    - template: refugee-camp.html
+    - title: Introduction
+      template: intro.html
+    - title: Cambodian Genocide
+      template: cambo-genocide.html
+    - title: Refugee Camps 
+      template: refugee-camp.html
     - template: resettlement-chart.html
-    - template: failure-resettlement.html
-    - template: incarceration.html
-    - template: law-1996.html
-    - template: detention.html
-    - template: zadvydas.html
-    - template: release-activism.html
-    - template: limbo.html
-    - template: sources.html
+    - title: Failure of Resettlement
+      template: failure-resettlement.html
+    - title: Turning life around
+      template: incarceration.html
+    - title: 1996 laws
+      template: law-1996.html
+    - title: Detention
+      template: detention.html
+    - title:  Zadvydas v. Davis
+      template: zadvydas.html
+    - title: Release and activism
+      template: release-activism.html
+    - title: Refugees in limbo
+      template: limbo.html
+    - title: About this project
+      template: sources.html
 ---
 
 {% for section in page.sections %}
 <section>
-  {% include {{section.template}} %}
+  {% include {{section.template}} section=section %}
 </section>
 {% endfor %}
