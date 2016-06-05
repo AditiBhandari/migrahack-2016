@@ -42,9 +42,6 @@ sections:
     - title: Call to Action
       template: call-to-action.html
       slug: call-to-action
-    - title: About this project
-      template: sources.html
-      slug: sources
 ---
 
 <article class="container-fluid wrapper">
@@ -54,3 +51,6 @@ sections:
   </section>
   {% endfor %}
 </article>
+<footer class="container-fluid footer">
+  {% include sources.html %}
+</footer>
