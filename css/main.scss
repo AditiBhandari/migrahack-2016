@@ -1,0 +1,63 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+body {
+	background-image: url('../img/dark_stripes.png');
+}
+
+.section {
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+  background-size: cover;
+
+	p {
+		font-size: 20px;
+		font-family: Georgia, serif;
+		color: #fff;
+		margin-top: 40px;
+		text-shadow: 1px 1px #000;
+	}
+
+	p.caption {
+		font-size: 14px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		color: #aaa;
+		font-style: italic;
+	}
+}
+
+.section--intro {
+  background-size: auto 100%;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+// TODO: Style this
+.gang-testimony {
+  blockquote {
+    border: none;
+  }
+}
+
+.gang-testimony__image {
+  display: block;
+  margin-left: 15%;
+  float: left;
+}
+
+.gang-testimony__narrative-wrapper {
+  float: left;
+  margin-left: 1em;
+  width: 50%;
+}
+
+.gang-testimony__name {
+  margin-top: 0;
+}
