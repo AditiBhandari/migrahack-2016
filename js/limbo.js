@@ -92,7 +92,7 @@
   }
 
   var LimboApp = function(options) {
-    let initialized = false;
+    var initialized = false;
     d3.csv(options.dataUrl, function(data) {
       var waypoint = new Waypoint({
         element: document.getElementById('limbo'),
