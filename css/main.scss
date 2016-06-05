@@ -154,8 +154,16 @@ hr {
   width: 80%;
 }
 
+.gang-testimony__name, .gang-testimony__narrative {
+  text-align: center;
+}
+
 .gang-testimony__name {
-  margin-top: 0;
+  margin-top: 1em;
+}
+
+.gang-testimony__narrative {
+  font-size: 17.5px;
 }
 
 /* carousel styles */
@@ -180,6 +188,10 @@ a.carousel-control.left:hover,
 a.carousel-control.right,
 a.carousel-control.right:hover {
   background:none;
+}
+
+.carousel-caption blockquote {
+  font-style: italic;
 }
 
 .limbo-animation-container {
