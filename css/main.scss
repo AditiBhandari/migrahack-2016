@@ -173,6 +173,26 @@ a.carousel-control.right:hover {
   background:none;
 }
 
+.limbo-animation-container {
+  margin-bottom: 20px;
+  min-height: 160px;
+}
 
+.deported-limbo-year-label, .deported-count, .limbo-count {
+  text-align: center;  
+}
 
+.deported-limbo-year-label, .deported-count {
+  font-size: 2em;
+}
 
+.limbo-count {
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.limbo-description {
+  font-style: italic; 
+  margin-bottom: 10px !important;
+}
