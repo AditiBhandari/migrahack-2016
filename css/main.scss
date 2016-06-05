@@ -3,8 +3,15 @@
 ---
 @charset "utf-8";
 
+html {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
 body {
 	background-image: url('../img/cork-wallet.png');
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .container-fluid {
@@ -16,16 +23,30 @@ body {
 	width: 100%;
 	background-repeat: no-repeat;
   	background-size: cover;
-  	padding-top: 60px;
   	margin-left: 15px !important;
 
 	p {
 		font-size: 1.5em;
 		font-family: Georgia, serif;
-		color: #666;
+		color: #505050;
 		line-height: 1.7;
 		margin-bottom: 40px;
 		vertical-align: top;
+	}
+
+	a {
+		color: #7a0000;
+	}
+
+	a:active {
+		color: #3d0000;
+	}
+
+	h3 {
+		font-size: 2.5em;
+		font-family: "Roboto", sans-serif;
+		font-weight: 700;
+		color: #3d3d3d;
 	}
 
 	p.caption {
@@ -33,21 +54,24 @@ body {
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
 		color: #666;
-		font-style: italic;
 		text-align: left;
+		margin-top: 3px;
 	}
 
-	p.emphasis {
+	h2 {
+		color: #505050;
+		font-family: Georgia, sans-serif;
 		font-size: 4.5em;
-		margin-top: 0px;
+		font-weight: 400;
 	}
 
-	span#hed {
-		font-size: 1.6em;
+	h1 {
+		font-size: 7em;
 		font-family: "Roboto", sans-serif;
 		font-weight: 900;
-		color: #3d3d3d;
-		line-height: 1;
+		color: #000;
+		margin-top: -70px;
+		line-height: 2.5em;
 	}
 
 	p.emphasis2 {
@@ -64,6 +88,12 @@ body {
 .fullbleed-img {
 	width: 100%;
 	height: auto;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.chart {
+	margin-bottom: 40px;
 }
 
 .section--intro {
@@ -97,20 +127,51 @@ hr {
 
 .gang-testimony__image {
   display: block;
-  margin-left: 15%;
-  float: left;
+  /* margin-left: 15%; */
+  /* float: left; */
+  text-align:center;
+  margin:auto;
 }
 
 .gang-testimony__narrative-wrapper {
-  float: left;
-  margin-left: 1em;
-  width: 50%;
+  /*float: left;*/
+  margin:auto;
+  width: 80%;
 }
 
 .gang-testimony__name {
   margin-top: 0;
 }
 
+/* carousel styles */
+.carousel-inner {min-height:675px;}
+a.carousel-control.left,
+a.carousel-control.left:hover, 
+a.carousel-control.right,
+a.carousel-control.right:hover {
+  background:none;
+}
+
+.limbo-animation-container {
+  margin-bottom: 20px;
+  min-height: 160px;
+}
+
 .deported-limbo-year-label, .deported-count, .limbo-count {
   text-align: center;  
+}
+
+.deported-limbo-year-label, .deported-count {
+  font-size: 2em;
+}
+
+.limbo-count {
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.limbo-description {
+  font-style: italic; 
+  margin-bottom: 10px !important;
 }
