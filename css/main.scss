@@ -4,30 +4,66 @@
 @charset "utf-8";
 
 body {
-	background-image: url('../img/dark_stripes.png');
+	background-image: url('../img/cork-wallet.png');
+}
+
+.container-fluid {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 
 .section {
-	height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
-  background-size: cover;
+  	background-size: cover;
+  	padding-top: 60px;
+  	margin-left: 15px !important;
 
 	p {
-		font-size: 20px;
+		font-size: 1.5em;
 		font-family: Georgia, serif;
-		color: #fff;
-		margin-top: 40px;
-		text-shadow: 1px 1px #000;
+		color: #666;
+		line-height: 1.7;
+		margin-bottom: 40px;
+		vertical-align: top;
 	}
 
 	p.caption {
-		font-size: 14px;
+		font-size: 1em;
 		font-family: "Roboto", sans-serif;
 		font-weight: 400;
-		color: #aaa;
+		color: #666;
 		font-style: italic;
+		text-align: left;
 	}
+
+	p.emphasis {
+		font-size: 4.5em;
+		margin-top: 0px;
+	}
+
+	span#hed {
+		font-size: 1.6em;
+		font-family: "Roboto", sans-serif;
+		font-weight: 900;
+		color: #3d3d3d;
+		line-height: 1;
+	}
+
+	p.emphasis2 {
+		font-size: 2em;
+	}
+}
+
+// IMAGES
+.portrait-img {
+	height: 100%;
+	width: auto;
+}
+
+.fullbleed-img {
+	width: 100%;
+	height: auto;
 }
 
 .section--intro {
@@ -37,6 +73,19 @@ body {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 auto;
+}
+
+video {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+hr {
+	width: 150px;
+	border: 1px #666 dashed;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 // TODO: Style this
