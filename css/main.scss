@@ -97,16 +97,31 @@ hr {
 
 .gang-testimony__image {
   display: block;
-  margin-left: 15%;
-  float: left;
+  /* margin-left: 15%; */
+  /* float: left; */
+  text-align:center;
+  margin:auto;
 }
 
 .gang-testimony__narrative-wrapper {
-  float: left;
-  margin-left: 1em;
-  width: 50%;
+  /*float: left;*/
+  margin:auto;
+  width: 80%;
 }
 
 .gang-testimony__name {
   margin-top: 0;
 }
+
+/* carousel styles */
+.carousel-inner {min-height:675px;}
+a.carousel-control.left,
+a.carousel-control.left:hover, 
+a.carousel-control.right,
+a.carousel-control.right:hover {
+  background:none;
+}
+
+
+
+
