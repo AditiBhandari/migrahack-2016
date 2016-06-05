@@ -132,6 +132,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 auto;
+	padding-bottom: 150px !important;
 }
 
 video {
@@ -204,10 +205,6 @@ a.carousel-control.left:hover,
 a.carousel-control.right,
 a.carousel-control.right:hover {
   background:none;
-}
-
-.carousel-caption blockquote {
-  font-style: italic;
 }
 
 .limbo-animation-container {
