@@ -1,4 +1,4 @@
-(function(window, d3, $) {
+(function(window, d3, $, Waypoint) {
   function limboAnimation() {
     /*
     var width = 900,
@@ -32,7 +32,20 @@
           var inner = yearLabel.enter().append('div')
               .attr('class', 'year-label');
 
-          inner.append('h3')
+          inner.append('div')
+              .attr('class', 'limbo-count')
+              .text(function(d) {
+                return "In limbo: " + numberFormat(d['TOTAL LIMBO']);
+              });
+
+          inner.append('div')
+              .attr('class', 'deported-count')
+              .text(function(d) {
+                return "Deported: " + numberFormat(d['TOTAL Deport']);
+              });
+
+
+          inner.append('div')
               .attr('class', 'deported-limbo-year-label')
               .text(function(d) {
 
@@ -44,17 +57,7 @@
                 }
               });
           
-          inner.append('div')
-              .attr('class', 'deported-count')
-              .text(function(d) {
-                return "In limbo: " + numberFormat(d['TOTAL LIMBO']);
-              });
 
-          inner.append('div')
-              .attr('class', 'limbo-count')
-              .text(function(d) {
-                return "Deported: " + numberFormat(d['TOTAL Deport']);
-              });
            
           yearLabel.exit().remove();
 
@@ -81,7 +84,7 @@
           var yearData = data[i];
           update(yearData);
           i++;
-        }, 1000);
+        }, 400);
       });
     }
 
@@ -89,10 +92,20 @@
   }
 
   var LimboApp = function(options) {
+    let initialized = false;
     d3.csv(options.dataUrl, function(data) {
-      var animation = limboAnimation();
-      d3.select(options.container).datum(data)
-          .call(animation);
+      var waypoint = new Waypoint({
+        element: document.getElementById('limbo'),
+        handler: function(direction) {
+          if (!initialized) {
+            initialized = true;
+            var animation = limboAnimation();
+            d3.select(options.container).datum(data)
+              .call(animation);
+          }
+        },
+        offset: '25%'
+      });
     });
   }; 
 
@@ -102,4 +115,4 @@
       dataUrl: 'data/deportations_and_limbo.csv'
     });
   });
-})(window, d3, $);
+})(window, d3, $, Waypoint);

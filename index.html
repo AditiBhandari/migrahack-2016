@@ -33,7 +33,7 @@ sections:
     - title: Zadvydas v. Davis
       template: zadvydas.html
       slug: zadvydas
-    - title: Refugees in limbo
+    - title: Deportation limbo
       template: limbo.html
       slug: limbo
     - title: Release and activism
@@ -49,7 +49,7 @@ sections:
 
 <article class="container-fluid wrapper">
   {% for section in page.sections %}
-  <section class="section row section--{{section.slug}}">
+  <section id="{{section.slug}}" class="section row section--{{section.slug}}">
     {% include {{section.template}} section=section %}
   </section>
   {% endfor %}
