@@ -101,6 +101,11 @@ body {
 	}
 }
 
+.section--gang-testimonies {
+  // HACK
+  margin-bottom: 40px;
+}
+
 // IMAGES
 .portrait-img {
 	height: 100%;
@@ -171,7 +176,10 @@ hr {
 }
 
 .gang-testimony__narrative {
-  font-size: 17.5px;
+  // HACK
+  line-height: initial !important;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 17.5px !important;
 }
 
 /* carousel styles */
